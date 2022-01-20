@@ -1,0 +1,14 @@
+package com.redis.springredis.repository;
+
+import com.redis.springredis.entity.User;
+
+import java.util.Map;
+
+public interface UserRepository {
+
+    void save(User user);
+    Map<Object, Object> findAll();
+    User findById(String id);
+    void update(User user);
+    void delete(String id);
+}
